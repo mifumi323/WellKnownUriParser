@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MifuminLib.WellKnownUriParser", "MifuminLib.WellKnownUriParser\MifuminLib.WellKnownUriParser.csproj", "{399486FE-9659-4738-AF07-94360F37281D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF8F3000-D0F9-46E9-A5AA-F2E2C447C6F9}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{399486FE-9659-4738-AF07-94360F37281D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{399486FE-9659-4738-AF07-94360F37281D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{399486FE-9659-4738-AF07-94360F37281D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{399486FE-9659-4738-AF07-94360F37281D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2483ADB-1BD6-4AAD-866E-5B8AA724B5C5}
+	EndGlobalSection
+EndGlobal
