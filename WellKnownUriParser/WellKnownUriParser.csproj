@@ -5,6 +5,8 @@
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
     <Authors>Mifumi Matsuda</Authors>
+    <AssemblyName>MifuminLib.WellKnownUriParser</AssemblyName>
+    <RootNamespace>MifuminLib.WellKnownUriParser</RootNamespace>
   </PropertyGroup>
 
 </Project>
