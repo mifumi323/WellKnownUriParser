@@ -12,7 +12,7 @@ namespace MifuminLib.WellKnownUriParser
         /// </summary>
         /// <param name="uriString">URI 文字列。</param>
         /// <param name="query">検索クエリ。取得失敗した場合は、空文字列。</param>
-        /// <returns>成功したら <code>true</code>、失敗したら <code>false</code>。</returns>
+        /// <returns>成功したら <c>true</c>。失敗したら <c>false</c>。</returns>
         public bool TryFromString(string uriString, out string query)
         {
             try
@@ -32,7 +32,7 @@ namespace MifuminLib.WellKnownUriParser
         /// URI 文字列から検索クエリを取得します。
         /// </summary>
         /// <param name="uriString">URI 文字列。</param>
-        /// <returns>検索クエリ。ない場合は <code>null</code>。</returns>
+        /// <returns>検索クエリ。ない場合は <c>null</c>。</returns>
         public string? FromString(string uriString)
         {
             return FromUri(new Uri(uriString));
@@ -42,7 +42,7 @@ namespace MifuminLib.WellKnownUriParser
         /// URI から検索クエリを取得します。
         /// </summary>
         /// <param name="uri">URI。</param>
-        /// <returns>検索クエリ。ない場合は <code>null</code>。</returns>
+        /// <returns>検索クエリ。ない場合は <c>null</c>。</returns>
         public virtual string? FromUri(Uri uri)
         {
             switch (uri.Host)
