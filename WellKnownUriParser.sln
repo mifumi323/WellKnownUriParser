@@ -10,11 +10,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		.travis.yml = .travis.yml
 		LICENSE.txt = LICENSE.txt
 		Data\SearchQueries.csv = Data\SearchQueries.csv
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellKnownUriParser.UnitTests", "WellKnownUriParser.UnitTests\WellKnownUriParser.UnitTests.csproj", "{9FEB1F17-8BA1-4D4F-B44D-B1C4DBAD93DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WellKnownUriParser.UnitTests", "WellKnownUriParser.UnitTests\WellKnownUriParser.UnitTests.csproj", "{9FEB1F17-8BA1-4D4F-B44D-B1C4DBAD93DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
