@@ -22,4 +22,32 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="SearchQueryParser.FromDomainName.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SearchQueryParser.FromDomainName.cs</LastGenOutput>
+    </None>
+    <None Update="SearchQueryParser.FromUri.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SearchQueryParser.FromUri.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="SearchQueryParser.FromDomainName.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SearchQueryParser.FromDomainName.tt</DependentUpon>
+    </Compile>
+    <Compile Update="SearchQueryParser.FromUri.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SearchQueryParser.FromUri.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
 </Project>
