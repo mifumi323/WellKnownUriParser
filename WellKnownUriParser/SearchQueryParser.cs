@@ -1,10 +1,11 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
 using System.Web;
 
 namespace MifuminLib.WellKnownUriParser
 {
+    /// <summary>
+    /// 検索クエリを取得する機能を提供します。
+    /// </summary>
     public partial class SearchQueryParser
     {
         /// <summary>
@@ -38,6 +39,12 @@ namespace MifuminLib.WellKnownUriParser
             return FromUri(new Uri(uriString));
         }
 
+        /// <summary>
+        /// URI クエリから直接取得できる、シンプルな検索クエリを取得します。
+        /// </summary>
+        /// <param name="uri">URI。</param>
+        /// <param name="key">パラメータ名。</param>
+        /// <returns></returns>
         protected virtual string? GetSearchSimpleQuery(Uri uri, string key)
         {
             var queries = HttpUtility.ParseQueryString(uri.Query);
