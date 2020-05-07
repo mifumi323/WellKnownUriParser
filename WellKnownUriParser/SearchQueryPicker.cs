@@ -6,7 +6,7 @@ namespace MifuminLib.WellKnownUriParser
     /// <summary>
     /// 検索クエリを取得する機能を提供します。
     /// </summary>
-    public partial class SearchQueryParser
+    public partial class SearchQueryPicker
     {
         /// <summary>
         /// URI 文字列から検索クエリの取得を試みます。

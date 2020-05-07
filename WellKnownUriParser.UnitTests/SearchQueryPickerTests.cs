@@ -5,9 +5,9 @@ using NUnit.Framework;
 
 namespace MifuminLib.WellKnownUriParser.UnitTests
 {
-    public class SearchQueryParserTests
+    public class SearchQueryPickerTests
     {
-        private readonly SearchQueryParser searchQueryParser = new SearchQueryParser();
+        private readonly SearchQueryPicker searchQueryParser = new SearchQueryPicker();
 
         [TestCaseSource(nameof(SearchQueries))]
 #pragma warning disable IDE0060 // 未使用のパラメーターを削除します

@@ -23,7 +23,7 @@ using System.Web;
 
 namespace MifuminLib.WellKnownUriParser
 {
-    public partial class SearchQueryParser
+    public partial class SearchQueryPicker
     {
         /// <summary>
         /// URI から検索クエリを取得します。
