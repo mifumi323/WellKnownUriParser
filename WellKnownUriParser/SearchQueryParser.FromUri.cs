@@ -62,6 +62,8 @@ namespace MifuminLib.WellKnownUriParser
                     return GetSearchSimpleQuery(uri, "q");
                 case "images.search.biglobe.ne.jp":
                     return GetSearchSimpleQuery(uri, "q");
+                case "images.search.yahoo.com":
+                    return GetSearchSimpleQuery(uri, "p");
                 case "imagesearch.excite.co.jp":
                     return GetSearchSimpleQuery(uri, "q") ?? GetSearchSimpleQuery(uri, "search");
                 case "insertmedia.bing.office.net":
