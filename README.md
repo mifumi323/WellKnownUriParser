@@ -5,7 +5,7 @@ Parse well known URI
 ## Install
 
 ```
-Install-Package MifuminLib.WellKnownUriParser -Version 0.1.0-alpha5
+Install-Package MifuminLib.WellKnownUriParser -Version 0.1.0-alpha6
 ```
 
 ## Author
