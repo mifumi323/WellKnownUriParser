@@ -163,7 +163,7 @@ namespace MifuminLib.WellKnownUriParser
                 case "www.google.co.kr":
                     return GetSearchSimpleQuery(uri, "q");
                 case "www.google.com":
-                    return GetSearchSimpleQuery(uri, "q");
+                    return GetSearchSimpleQuery(uri, "q") ?? GetSearchSimpleQuery(uri, "as_q");
                 case "www.google.com.br":
                     return GetSearchSimpleQuery(uri, "q");
                 case "www.google.es":
