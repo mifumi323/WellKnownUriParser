@@ -130,6 +130,8 @@ namespace MifuminLib.WellKnownUriParser
                     return GetSearchSimpleQuery(uri, "q");
                 case "search.myjcom.jp":
                     return GetSearchSimpleQuery(uri, "q");
+                case "search.naver.com":
+                    return GetSearchSimpleQuery(uri, "query");
                 case "search.nifty.com":
                     return GetSearchSimpleQuery(uri, "q") ?? GetSearchSimpleQuery(uri, "Text");
                 case "search.plushome.aswidget.com":
