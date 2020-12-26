@@ -86,6 +86,8 @@ namespace MifuminLib.WellKnownUriParser
                     return HttpUtility.UrlDecode(Path.GetFileNameWithoutExtension(uri.AbsolutePath));
                 case "kaikatsu.jword.jp":
                     return GetSearchSimpleQuery(uri, "q");
+                case "m.search.naver.com":
+                    return GetSearchSimpleQuery(uri, "query");
                 case "menimeni.com":
                     return HttpUtility.UrlDecode(Path.GetFileNameWithoutExtension(uri.AbsolutePath));
                 case "mobss.jword.jp":
