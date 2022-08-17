@@ -174,6 +174,8 @@ namespace MifuminLib.WellKnownUriParser
                     return GetSearchSimpleQuery(uri, "q");
                 case "www.google.it":
                     return GetSearchSimpleQuery(uri, "q");
+                case "www.gopher.com":
+                    return GetSearchSimpleQuery(uri, "q");
                 case "www.info.com":
                     return GetSearchSimpleQuery(uri, "q");
                 case "www.msn.com":
