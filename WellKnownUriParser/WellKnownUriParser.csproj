@@ -8,18 +8,23 @@
     <AssemblyName>MifuminLib.WellKnownUriParser</AssemblyName>
     <RootNamespace>MifuminLib.WellKnownUriParser</RootNamespace>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <Copyright>Copyright 2020 Mifumi Matsuda</Copyright>
+    <Copyright>Copyright 2020-2022 Mifumi Matsuda</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Parse well known URI</Description>
     <RepositoryUrl>https://github.com/mifumi323/WellKnownUriParser</RepositoryUrl>
-    <Version>0.1.0-alpha7</Version>
+    <Version>0.1.0-alpha8</Version>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
