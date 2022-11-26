@@ -31,7 +31,7 @@ namespace MifuminLib.WellKnownUriParser
                 case "cn.bing.com":
                     return GetSearchSimpleQuery(uri, "q");
                 case "cse.google.co.jp":
-                    return GetSearchSimpleQuery(uri, "q");
+                    return GetSearchSimpleQuery(uri, "q", "/cse");
                 case "decomailer.awalker.jp":
                     return GetSearchSimpleQuery(uri, "q");
                 case "docomo.ne.jp":
@@ -39,7 +39,7 @@ namespace MifuminLib.WellKnownUriParser
                 case "ecnavi.jp":
                     return GetSearchSimpleQuery(uri, "Keywords");
                 case "encrypted.google.com":
-                    return GetSearchSimpleQuery(uri, "q");
+                    return GetSearchSimpleQuery(uri, "q", "/search");
                 case "eonet.jp":
                     return GetSearchSimpleQuery(uri, "q");
                 case "gensun.org":
@@ -59,7 +59,7 @@ namespace MifuminLib.WellKnownUriParser
                 case "image.search.yahoo.co.jp":
                     return GetSearchSimpleQuery(uri, "p");
                 case "images.google.co.jp":
-                    return GetSearchSimpleQuery(uri, "q");
+                    return GetSearchSimpleQuery(uri, "q", "/imgres");
                 case "images.search.biglobe.ne.jp":
                     return GetSearchSimpleQuery(uri, "q");
                 case "images.search.yahoo.com":
@@ -163,17 +163,17 @@ namespace MifuminLib.WellKnownUriParser
                 case "www.ecosia.org":
                     return GetSearchSimpleQuery(uri, "q");
                 case "www.google.co.jp":
-                    return GetSearchSimpleQuery(uri, "q") ?? GetSearchSimpleQuery(uri, "as_q");
+                    return GetSearchSimpleQuery(uri, "q", "/search") ?? GetSearchSimpleQuery(uri, "as_q", "/search");
                 case "www.google.co.kr":
-                    return GetSearchSimpleQuery(uri, "q");
+                    return GetSearchSimpleQuery(uri, "q", "/search");
                 case "www.google.com":
-                    return GetSearchSimpleQuery(uri, "q") ?? GetSearchSimpleQuery(uri, "as_q");
+                    return GetSearchSimpleQuery(uri, "q", "/search") ?? GetSearchSimpleQuery(uri, "as_q", "/search");
                 case "www.google.com.br":
-                    return GetSearchSimpleQuery(uri, "q");
+                    return GetSearchSimpleQuery(uri, "q", "/search");
                 case "www.google.es":
-                    return GetSearchSimpleQuery(uri, "q");
+                    return GetSearchSimpleQuery(uri, "q", "/search");
                 case "www.google.it":
-                    return GetSearchSimpleQuery(uri, "q");
+                    return GetSearchSimpleQuery(uri, "q", "/search");
                 case "www.gopher.com":
                     return GetSearchSimpleQuery(uri, "q");
                 case "www.info.com":

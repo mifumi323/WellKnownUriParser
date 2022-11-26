@@ -26,4 +26,10 @@
     <ProjectReference Include="..\WellKnownUriParser\WellKnownUriParser.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="NotMatch.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
