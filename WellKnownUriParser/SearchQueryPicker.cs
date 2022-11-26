@@ -52,5 +52,18 @@ namespace MifuminLib.WellKnownUriParser
             if (values != null && values.Length > 0) return values[0];
             return null;
         }
+
+        /// <summary>
+        /// URI クエリから直接取得できる、シンプルな検索クエリを取得します。
+        /// </summary>
+        /// <param name="uri">URI。</param>
+        /// <param name="key">パラメータ名。</param>
+        /// <param name="path">ドメインより後ろのパス</param>
+        /// <returns></returns>
+        protected virtual string? GetSearchSimpleQuery(Uri uri, string key,string path)
+        {
+            if (uri.AbsolutePath != path) return null;
+            return GetSearchSimpleQuery(uri, key);
+        }
     }
 }
