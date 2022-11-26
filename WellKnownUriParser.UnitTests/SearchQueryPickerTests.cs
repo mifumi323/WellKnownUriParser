@@ -7,16 +7,14 @@ namespace MifuminLib.WellKnownUriParser.UnitTests
 {
     public class SearchQueryPickerTests
     {
-        private readonly SearchQueryPicker searchQueryParser = new SearchQueryPicker();
+        private readonly SearchQueryPicker searchQueryParser = new();
 
         [TestCaseSource(nameof(SearchQueries))]
-#pragma warning disable IDE0060 // 未使用のパラメーターを削除します
-        public void FromStringTest(string uri, string key, string query)
-#pragma warning restore IDE0060 // 未使用のパラメーターを削除します
+        public void FromStringTest(string uri, string query)
         {
             Assert.AreEqual(query, searchQueryParser.FromString(uri));
         }
 
-        public static IEnumerable<string[]> SearchQueries => File.ReadAllLines("SearchQueries.csv").Skip(1).Select(line => line.Split(","));
+        public static IEnumerable<string[]> SearchQueries => File.ReadAllLines("SearchQueries.csv").Skip(1).Select(line => { var p = line.Split(","); return new string[] { p[0], p[2] }; });
     }
 }
