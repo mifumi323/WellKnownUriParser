@@ -144,9 +144,13 @@ namespace MifuminLib.WellKnownUriParser
                     return GetSearchSimpleQuery(uri, "p");
                 case "search.yahoo.com":
                     return GetSearchSimpleQuery(uri, "p");
+                case "service.smt.docomo.ne.jp":
+                    return GetSearchSimpleQuery(uri, "q", "/portal/search/web/result.html") ?? GetSearchSimpleQuery(uri, "q", "/portal/search/image/result.html");
                 case "sp-web.search.auone.jp":
                     return GetSearchSimpleQuery(uri, "q");
                 case "th.search.yahoo.com":
+                    return GetSearchSimpleQuery(uri, "p");
+                case "tw.images.search.yahoo.com":
                     return GetSearchSimpleQuery(uri, "p");
                 case "v-buster.jword.jp":
                     return GetSearchSimpleQuery(uri, "q");
