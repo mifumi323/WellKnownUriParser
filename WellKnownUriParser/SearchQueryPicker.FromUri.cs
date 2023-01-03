@@ -150,6 +150,8 @@ namespace MifuminLib.WellKnownUriParser
                     return GetSearchSimpleQuery(uri, "q");
                 case "th.search.yahoo.com":
                     return GetSearchSimpleQuery(uri, "p");
+                case "tw.images.search.yahoo.com":
+                    return GetSearchSimpleQuery(uri, "p");
                 case "v-buster.jword.jp":
                     return GetSearchSimpleQuery(uri, "q");
                 case "wakwakpc.starthome.jp":
