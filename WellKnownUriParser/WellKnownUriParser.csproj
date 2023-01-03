@@ -12,7 +12,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Parse well known URI</Description>
     <RepositoryUrl>https://github.com/mifumi323/WellKnownUriParser</RepositoryUrl>
-    <Version>0.1.0-alpha10</Version>
+    <Version>0.1.0-beta01</Version>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
